@@ -1,0 +1,173 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+% \addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Luke}{Fraser}
+      {Computer Science Engineer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Address}
+    1040 Casa Loma Dr.,
+    Reno NV 89503
+    ~
+  \section{Tel}
+    707-592-1544
+    ~
+  \section{Mail}
+    \href{mailto:lukefrasera@gmail.com}{\textbf{Luke.Fraser.A@}\\gmail.com}
+    \href{mailto:fraser@nevada.unr.edu}{\textbf{Fraser@}\\nevada.unr.edu}
+    ~
+  \section{Repos}
+    \href{https://bitbucket.org/totalvideopro}{\footnotesize{bitbucket.org/totalvideopro}}
+    \href{https://github.com/lukefrasera}{\footnotesize{github.com/lukefrasera}}    
+    ~
+  % \section{Programming}
+  %   \includegraphics[scale=0.62]{img/programming.png}
+  \section{OS Development}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/4stars.png}
+    ~
+  \section{Technical Skills}
+    \textbf{C++}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{C}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Python}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Matlab}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Cmake}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{OpenGL}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{OpenCV}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{BASH}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{MSVS}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{ROS}\includegraphics[scale=0.40]{img/5stars.png}\\ \scriptsize{(Groovy, Hydro, Indigo, Jade)}
+    ~
+\end{aside}
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {02/15 - Now}
+    {Software Engineering Intern}
+    {Sierra Nevada Corporation: CNS Branch, Reno NV}
+    {A part of the vision team developing helicopter systems to operate in visually degraded environments. Developing algorithms and software systems for use on aircraft. Areas of focus: image processing, sensor fusion, SLAM, and classification.\\}
+  \entry
+    {06/15 - Now}
+    {Research Assistant}
+    {University of Nevada, Reno}
+    {Working with Monica Nicolescu on an intent recognition system for naval ships. The system recognizes behaviors and intents of single-ship and multi-ship groups based on their movements in water.\\}
+  \entry
+    {08/14 - 05/15}
+    {Teaching Assistant}
+    {University of Nevada, Reno}
+    {Working as a graduate Teaching Assistant teaching an introductory engineering course and Calculus I over the course of two semesters.\\}
+  \entry
+    {03/14 - 8/14}
+    {Undergraduate Researcher}
+    {University of Nevada, Reno}
+    {Working to develop an autonomous system to find and core cancers cells in biopsied tissue to build a Tissue Micro Array. Using image processing and segmentation a method of extracting pixels that belong to cancerous cells was developed.\\}
+    \entry
+    {01/13 - 8/14}
+    {Software Engineering Intern}
+    {Bally Technologies Inc., Reno}
+    {Working as a software engineering intern to help develop Class III Nevada style games and tools for developers and artists.\\}
+    \entry
+    {06/14 - 9/14}
+    {Software Engineer}
+    {Flirtey Inc., Reno}
+    {Software engineer designing core drone delivery platform.\\}
+    \entry
+    {2012 - 2013}
+    {Engineering Presenter}
+    {Department of Engineering, University of Nevada, Reno}
+    {Worked for the Mobile Engineering lab informing K-6th graders about engineering opportunities and teaching engineering skills.}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2014 - 2016}
+    {Master's Degree in Computer Science}
+    {University of Nevada, Reno}
+    {Main subjects: Robotics, Sensor Fusion, Computer Vision.\\}
+    % \emph{Title of the Thesis: "A Handoff Algorithm based on Link Quality Prediction for Mass Transit Wireless Mesh Networks"      .}\\
+    % \emph{Relators: Prof. Enzo Mingozzi, Ing. Carlo Vallati, Prof. Luciano Lenzini.}\\}
+  \entry
+    {2009 - 2014}
+    {BS in Computer Science \& Engineering}
+    {University of Nevada, Reno, USA}
+    {Main subjects: Mathematics, Programming, Computer Vision, Robotics.\\}
+\end{entrylist}
+
+\section{Certifications}
+\begin{entrylist}
+  \entry
+    {07/2015}
+    {FAA D0-178C Software Training}
+    {ENEA - Worldwi de Certification Services}
+    {\emph{Software engineering practices for developing FAA compliant software for use on commercial aircraft.}}
+\end{entrylist}
+
+% \newpage
+\section{Interests}
+    {\textbf{Computer Vision:}}\\
+    {There are many sub-fields of computer vision and I have covered a large gamut, but my main focus has been with vehicle event recognition/tracking, image based data grouping/segmentation, and classification.}\\ \\
+    {\textbf{Fluid Simulation:}}\\
+    {Computation fluid dynamics is the implementation of the Navier Stokes equations to model incompressible/compressible fluids. These simulations are used to understand aerodynamics and produce amazing visuals for cinematic movies. I have always been interested in dynamics simulation on computers and constantly look at new techniques for solving these simulations. I have developed my own simulators to test my understanding of new topics.}
+% \begin{entrylist}
+%     \entry
+%         {Computer Vision}
+%         {There are many sub-fields of computer vision and I have covered a large gamut, but my main focus has been with vehicle event recognition/tracking and image based data grouping/segmentation.}
+%         {}
+%         {}
+% \end{entrylist}
+
+% \section{Publications}
+% C. Benedetto, E. Mingozzi, C. Vallati\\
+% \textbf{A Handoff Algorithm based on Link Quality Prediction for Mass Transit Wireless Mesh Networks}\\
+% \emph{Proceedings of the 18th IEEE Symposium on Computers and Communications (ISCC 2013), Split, Croatia, July 7-10, 2013}
+% \\
+% \section{Other Info}
+% For the Italian job market:\\
+% \emph{Si autorizza il trattamento delle informazioni contenute nel curriculum in conformità alle disposizioni previste dal d.lgs. 196/2003. Si dichiara altresì di essere consapevole che, in caso di dichiarazioni non veritiere, si è passibili di sanzioni penali ai sensi del DPR 445/00 oltre alla revoca dei benefici eventualmente percepiti.}
+% \\
+% \begin{flushleft}
+% \emph{January 14th, 2014}
+% \end{flushleft}
+% \begin{flushright}
+% \emph{Carmine Benedetto}
+% \end{flushright}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}

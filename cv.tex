@@ -1,0 +1,159 @@
+% !TEX program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Luke}{Fraser}
+      {Senior Robotics Software Engineer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Address}
+    16792 Bar Ave, Hayward CA 94580
+    ~
+  \section{Tel}
+    775-273-8474
+    ~
+  \section{Mail}
+    \textbf{luke@fratkins.com}
+    ~
+  \section{Repos}
+    \textbf{github.com/lukefrasera}
+    ~
+  \section{OS Development}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/3stars.png}
+    ~
+  \section{Technical Skills}
+  \textbf{Python}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{C++}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{C}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Typescript}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Haskell}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{Javascript}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Rust}\includegraphics[scale=0.40]{img/1stars.png}
+    \textbf{Matlab}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Julia}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{CMake}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{OpenGL}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{OpenCV}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{BASH}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{MSVS}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Latex}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{PR2}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{ROS2}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{ROS}\includegraphics[scale=0.40]{img/5stars.png}
+    ~
+\end{aside}
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {01/18 - Now}
+    {Senior Robotics Software Engineer}
+    {Abundant Robotics, Hayward CA}
+    {Developing autonomy for the apple harvester.}
+  \entry
+    {08/16 - 01/18}
+    {Senior Robotics Software Engineer}
+    {Simbe Robotics, San Francisco CA}
+    {Architecting the computer vision pipeline.}
+  \entry
+    {02/15 - 08/16}
+    {Software Engineer}
+    {Sierra Nevada Corporation: CNS Branch, Reno NV}
+    {A part of the vision team developing systems to operate in visually degraded environments. Developing algorithms for use on aircraft. Areas of focus: image processing, sensor fusion, Navigation, classification and vision.}
+  \entry
+    {06/15 - 08/16}
+    {Research Assistant}
+    {University of Nevada, Reno}
+    {Working with Monica Nicolescu on an intent recognition system for naval ships. The system recognizes behaviors and intents of single-ship and multi-ship groups based on their movements in water.}
+  % \entry
+  %   {08/14 - 05/15}
+  %   {Teaching Assistant}
+  %   {University of Nevada, Reno}
+  %   {}
+  % \entry
+  %   {03/14 - 8/14}
+  %   {Undergraduate Researcher}
+  %   {University of Nevada, Reno}
+  %   {}
+  \entry
+    {01/13 - 8/14}
+    {Software Engineering Intern}
+    {Bally Technologies Inc., Reno}
+    {Working as a software engineering intern to help develop Class III Nevada style games and tools for developers and artists.}
+  \entry
+    {06/14 - 9/14}
+    {Software Engineer}
+    {Flirtey Inc., Reno}
+    {Software engineer designing the core drone delivery platform}
+\end{entrylist}
+
+\section{Publications}
+\begin{entrylist}
+  \entry
+    {Jan 2017}
+    {\emph{A Compact Task Representation for Hierarchical Robot Control}}
+    {}
+    {\emph{Humanoid Robots (Humanoids), 2016}\\IEEE-RAS 16th International Conference on Humanoid Robots}
+  \entry
+    {Jan 2018}
+    {\emph{A Distributed Control Architecture for Collaborative Multi-Robot Task Allocation}}
+    {}
+    {\emph{Humanoid Robots (Humanoids), 2017}\\IEEE-RAS 17th International Conference on Humanoid Robots}
+  \entry
+    {Oct 2018}
+    {\emph{A Real-Time Spike-timing Classifier of Spatio-temporal patterns}}
+    {}
+    {Neurocomputing Volume 311, Pages 183-196}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2014 - 2016}
+    {Master's Degree in Computer Science}
+    {University of Nevada, Reno}
+    {Main subjects: Robotics, Sensor Fusion, Computer Vision.}
+    % \emph{Title of the Thesis: "A Handoff Algorithm based on Link Quality Prediction for Mass Transit Wireless Mesh Networks"      .}\\
+    % \emph{Relators: Prof. Enzo Mingozzi, Ing. Carlo Vallati, Prof. Luciano Lenzini.}\\}
+  \entry
+    {2009 - 2014}
+    {BS in Computer Science \& Engineering}
+    {University of Nevada, Reno, USA}
+    {Main subjects: Mathematics, Computer Vision, Robotics.}
+\end{entrylist}
+
+\section{Thesis}
+{\textbf{Title:} \emph{A Hierarchical Control Architecture for Robust and Adaptive Robot Control \\ \textbf{Abstract:}}}
+{The architecture 1) provides an efficient, compact encoding of tasks with multiple paths of execution, 2) uses the same compact representation as the controller that the robot will use to achieve its goals, 3) allows the robot to dynamically decide which execution path to follow using an activation spreading mechanism that relies on environmental conditions, and 4) provides a mechanism for robustness to changes in the environment during the task execution.}
+
+% \section{Certifications}
+% \begin{entrylist}
+%   \entry
+%     {08/2015}
+%     {FAA D0-178C Software Training}
+%     {ENEA - Worldwide Certification Services}
+%     {\emph{Software engineering practices for developing FAA compliant software for use on commercial aircraft.}}
+% \end{entrylist}
+
+\end{document}

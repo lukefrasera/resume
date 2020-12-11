@@ -22,7 +22,7 @@
 \definecolor{white}{RGB}{255,255,255}
 
 \definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{gray}{HTML}{000000}
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
@@ -96,7 +96,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \RequirePackage{tikz}
 
 \newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
+  \fontsize{9pt}{15pt}\selectfont%
   \thinfont%
   \color{white}%
 }
@@ -109,7 +109,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{pblue}%
+      \fontsize{14pt}{22pt}\color{pblue}%
       \bodyfont #3%
     };
   \end{tikzpicture}
@@ -158,10 +158,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \Large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par%\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[2]{
@@ -189,7 +189,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
-    #4\vspace{\parsep}%
+    \small#4\vspace{\parsep}%
   }\\}
 
 
@@ -215,118 +215,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \let\section\oldsection
 }
 
-%%%%%%%%%%%%%%%%
-% Bibliography %
-%%%%%%%%%%%%%%%%
-
-% \RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
-
-% \DeclareFieldFormat[article]{title}{#1\par}
-% \DeclareFieldFormat[inproceedings]{title}{#1\par}
-% \DeclareFieldFormat[misc]{title}{#1\par}
-% \DeclareFieldFormat[report]{title}{#1\par}
-
-% \DeclareBibliographyDriver{article}{%
-%   \printfield{title}%
-%   \newblock%
-%   \printnames{author}%
-%   \par%
-%   \newblock%
-%   {%
-%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
-%     \usebibmacro{journal+issuetitle}%
-%     \setunit{\space}%
-%     \printfield{pages}%
-%     \newunit%
-%     \printlist{publisher}%
-%     \setunit*{\addcomma\space}%
-%     \printfield{year}%
-%     \newunit%
-%   }
-%   \par\vspace{0.3\baselineskip}
-% }
-
-% \DeclareBibliographyDriver{inproceedings}{%
-%   \printfield{title}%
-%   \newblock%
-%   \printnames{author}%
-%   \par%
-%   \newblock%
-%   {%
-%     \footnotesize\addfontfeature{Color=lightgray}%
-%     \printfield{booktitle}%
-%     \setunit{\addcomma\space}%
-%     \printfield{year}%
-%     \setunit{\addcomma\space}%
-%     \printlist{location}%
-%     \newunit%
-%   }
-%   \par\vspace{0.3\baselineskip}
-% }
-
-% \DeclareBibliographyDriver{misc}{%
-%   \printfield{title}%
-%   \newblock%
-%   \printnames{author}%
-%   \par%
-%   \newblock%
-%   {%
-%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
-%     \printfield{booktitle}%
-%     \setunit*{\addcomma\space}%
-%     \printfield{note}%
-%     \setunit*{\addcomma\space}%
-%     \printfield{year}%
-%     \setunit{\addcomma\space}%
-%     \printlist{location}%
-%     \newunit%
-%   }
-%   \par\vspace{0.3\baselineskip}
-% }
-
-% \DeclareBibliographyDriver{report}{%
-%   \printfield{title}%
-%   \newblock%
-%   \printnames{author}%
-%   \par%
-%   \newblock%
-%   {%
-%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
-%     \printfield{type}%
-%     \setunit{\space}%
-%     \printfield{number}%
-%     \setunit{\addcomma\space}%
-%     \printfield{year}%
-%     \newunit%
-%   }
-%   \par\vspace{0.3\baselineskip}
-% }
-
-% \DeclareNameFormat{author}{%
-%   \small\addfontfeature{Color=lightgray}%
-%   % \ifblank{#3}{}{#3\space}#1%
-%   \ifthenelse{\value{listcount}<\value{liststop}}
-%     {\addcomma\space}
-%     {}%
-% }
-
-% \newcommand{\printbibsection}[2]{
-%   \begin{refsection}
-%     \nocite{*}
-%     \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
-%   \end{refsection}
-% }
-
-% \DeclareSortingScheme{chronological}{
-%   \sort[direction=descending]{\field{year}}
-%   \sort[direction=descending]{\field{month}}
-% }
-
-
-
-%%%%%%%%%%%%%%%%
-% Other tweaks %
-%%%%%%%%%%%%%%%%
 
 \RequirePackage[left=5.9cm,top=2cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
